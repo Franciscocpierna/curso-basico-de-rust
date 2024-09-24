@@ -103,8 +103,14 @@ fn main() {
 	println!("Versão antiga: {:?}", funcao1(55));
 	println!("Versão antiga: {:?}", funcao2(55));
 	println!("Versão antiga: {:?}", funcao3(155));
+	let eu = funcao3(155); 
+	if eu == None{
+		println!("Sou nono")
+	}
 
-
+     if funcao3(155)==None{
+		println!("Eu sou none");
+	 }
 
 	let mut entrada = MeuInteiro::new();
 	if entrada.set_value(55) {
